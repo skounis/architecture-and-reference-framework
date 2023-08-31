@@ -58,3 +58,12 @@ serve:
 clean:
 	- $(RM) -rf $(BUILD_DIR) $(SITE_DIR)
 
+prepare:
+	- sudo apt update -y
+	- sudo apt install pandoc -y
+	- sudo apt install texlive-xetex -y
+	- sudo apt install mkdocs -y
+	- pip install mkdocs-material
+
+deploy: 
+	- mkdocs gh-deploy --force
