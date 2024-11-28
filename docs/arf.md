@@ -1173,7 +1173,7 @@ To re-use the building blocks of attributes and attestations, the
 concept of using catalogues was introduced. Creating and maintaining
 controlled vocabulary, catalogue of attributes and attestation
 rulebooks, is essential for the development and success of the EUDI
-Wallet ecosystem, enabling shorter "time-to-market\" and efficient
+Wallet ecosystem, enabling shorter "time-to-market" and efficient
 implementation.
 
 Building on the requirements of \[Topic 12\], having in mind both the
