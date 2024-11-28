@@ -336,7 +336,7 @@ for purposes of facilitating identity matching:
 
 -   nationality
 
--   A \'Place of birth' attribute, see below.
+-   A 'Place of birth' attribute, see below.
 
 -   An 'Address' attribute, see below.
 
