@@ -194,7 +194,7 @@ identifying themselves to services that demand user identification while
 maintaining control over the sharing of their personal data.
 
 This scenario covers the complete lifecycle of the EUDI Wallet from the
-User\'s perspective. It spans from acquiring a valid Wallet Instance to
+User's perspective. It spans from acquiring a valid Wallet Instance to
 the process of identifying and authenticating themselves for an online
 service. The focus here is on a practical remote same-device flow (as
 detailed in [Section 4.2.2](#422-attestation-presentation-flows) and [4.2.3](#423-mobile-apps-and-web-browsers)). In this context, a User utilises a
@@ -817,7 +817,7 @@ user experience and security.
 
 When a Relying Party requires User authentication and some data to
 provide a service, the process begins within either a web browser or a
-mobile app. In the Remote Same-Device flow in particular, the User\'s
+mobile app. In the Remote Same-Device flow in particular, the User's
 browser or app will redirect the request to their EUDI Wallet whenever a
 service provider needs authentication or data. In contrast, a Remote
 Cross-Device flow and both the proximity flows (supervised or
@@ -826,7 +826,7 @@ NFC tap or the scanning of a QR code, that will not require the
 interaction with the web browser.
 
 As illustrated in figure 2, secure and streamlined interaction with
-other applications, both on the User\'s device and externally, is
+other applications, both on the User's device and externally, is
 crucial. Key areas for discussion and improvement include:
 
 - **Secure Cross-Device Flows**: Existing cross-device flows need
@@ -857,19 +857,19 @@ Cryptographic Device (WSCD):
 
 1. ***Remote Wallet Secure Cryptographic Device (Remote WSCD)***: In
     this architecture, the Wallet Secure Cryptographic Device is
-    situated remotely, separate from the user\'s device, for example -
+    situated remotely, separate from the user's device, for example -
     implemented by the Wallet Provider using an HSM.
 
 2. ***Local External Wallet Secure Cryptographic Device (Local External WSCD)***: If a device lacks sufficiently secure hardware, such as a
     secure element, external hardware components like smartcards may be
     necessary to enhance security. This architecture involves an
     external Wallet Secure Cryptographic Device that is connected to, or
-    interacts with, the User\'s device, to provide cryptographic
+    interacts with, the User's device, to provide cryptographic
     functions, for example - a hardware token or smart card.
 
 3. ***Local Wallet Secure Cryptographic Device (Local WSCD)***: This
     architecture refers to a scenario where the Wallet Secure
-    Cryptographic Device is integrated directly within the User\'s
+    Cryptographic Device is integrated directly within the User's
     device. This includes solutions like eSIM/eUICC and eSE. In these
     scenarios, the WSCA (e.g., a Java Card applet) might be deployed by
     the Wallet Provider. Other examples are based on native solutions,
@@ -961,7 +961,7 @@ manages the EUDI Wallet Instance, which may involve:
 -   The EUDI Wallet Provider updating the EUDI Wallet Instance,
 
 -   The EUDI Wallet Provider revoking the EUDI Wallet Instance,
-    including at the User\'s request. Revocation of the Wallet Instance
+    including at the User's request. Revocation of the Wallet Instance
     is accomplished by revoking the Wallet Instance Attestation (see
     \[Topic 9\] and \[Topic 38\]).
 
@@ -1365,7 +1365,7 @@ trust in the EUDI Wallet ecosystem:
     -   Relying Parties may try to request attributes from a Wallet
         Instance for which they have no lawful grounds.
 
--   Relying Parties may try to violate a User\'s privacy by tracking the
+-   Relying Parties may try to violate a User's privacy by tracking the
     User by processing their data without lawful grounds. They can do
     so, as an example, by comparing without lawful grounds a signature,
     hash, or public key value present in an attestation that the User
@@ -1870,7 +1870,7 @@ Wallet Instance:
 
 2.  Once the attestation is issued into the Wallet Instance, the User
     can then present attributes from this attestation to a Relying Party
-    Instance, according to the User\'s decision and depending on
+    Instance, according to the User's decision and depending on
     successful authentication of the Relying Party. The required trust
     relationships for presenting PIDs and attestations, including User
     approval and Relying Party authentication, are discussed in [Section
@@ -2270,7 +2270,7 @@ proximity flow and remote flow, and including: 
     services. 
 
 -   Use cases where there is, according to the GDPR or other
-    legislation, no legal need to ask for the User\'s approval because
+    legislation, no legal need to ask for the User's approval because
     another legal basis exists for requesting the attributes.
 
 A prerequisite for requesting User approval is that the Wallet Instance
