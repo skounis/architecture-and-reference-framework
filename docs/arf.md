@@ -1149,10 +1149,10 @@ Attestation Rulebooks are defined by different organisations:
 ### 5.4 Catalogues
 
 Section 2 in [Article 45e](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1183#d1e3883-1-1) of the regulation, sets up the direct legal
-basis for the Commission to \"**where necessary, establish
+basis for the Commission to "**where necessary, establish
 specifications and procedures** for the catalogue of attributes and
 schemes for the attestation of attributes and verification procedures
-for qualified electronic attestations of attributes\".
+for qualified electronic attestations of attributes".
 
 One of the main rationales for the ARF is to reach a high level of
 interoperability. This interoperability should be achieved on different
