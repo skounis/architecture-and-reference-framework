@@ -8,13 +8,18 @@
       
       
       
+        <link rel="canonical" href="https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/1.0.0/">
+      
       
       
         <link rel="next" href="architecture-and-reference-framework-main/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
+        
+      
+      
+      <link rel="icon" href="media/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -22,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -38,11 +43,13 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="media/extra.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -50,8 +57,18 @@
 
     
     
-    
-  </head>
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="European Digital Identity" />
+<meta property="og:image" content="https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/1.0.0/assets/images/social/index.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/1.0.0/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="European Digital Identity" />
+<meta property="twitter:image" content="https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/1.0.0/assets/images/social/index.png" />
+</head>
   
   
     
@@ -92,7 +109,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="European Digital Identity" class="md-header__button md-logo" aria-label="European Digital Identity" data-md-component="logo">
       
-  <img src="media/eu-logo.jpg" alt="logo">
+  <img src="media/logo_eudi_white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -124,8 +141,18 @@
     
     <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -142,7 +169,7 @@
         <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework
@@ -161,12 +188,14 @@
         
   
   
+  
     
   
   
     <li class="md-tabs__item md-tabs__item--active">
       <a href="." class="md-tabs__link">
         
+  
   
     
   
@@ -181,9 +210,11 @@
   
   
   
+  
     <li class="md-tabs__item">
       <a href="architecture-and-reference-framework-main/" class="md-tabs__link">
         
+  
   
     
   
@@ -198,9 +229,11 @@
   
   
   
+  
     <li class="md-tabs__item">
       <a href="discussion-topics/" class="md-tabs__link">
         
+  
   
     
   
@@ -215,13 +248,34 @@
   
   
   
+  
     <li class="md-tabs__item">
       <a href="technical-specifications/" class="md-tabs__link">
         
   
+  
     
   
   Technical specifications
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://docs.eudi.dev/latest/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Reference Implementation
 
       </a>
     </li>
@@ -260,7 +314,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="European Digital Identity" class="md-nav__button md-logo" aria-label="European Digital Identity" data-md-component="logo">
       
-  <img src="media/eu-logo.jpg" alt="logo">
+  <img src="media/logo_eudi_white.svg" alt="logo">
 
     </a>
     European Digital Identity
@@ -270,7 +324,7 @@
       <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework
@@ -299,10 +353,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     European Digital Identity Wallet
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -311,10 +371,16 @@
       <a href="." class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     European Digital Identity Wallet
+  
+
     
   </span>
+  
   
 
       </a>
@@ -337,7 +403,9 @@
         <li class="md-nav__item">
   <a href="#architecture-and-reference-framework" class="md-nav__link">
     <span class="md-ellipsis">
-      Architecture and Reference Framework
+      
+        Architecture and Reference Framework
+      
     </span>
   </a>
   
@@ -346,7 +414,9 @@
         <li class="md-nav__item">
   <a href="#contents-of-the-repository" class="md-nav__link">
     <span class="md-ellipsis">
-      Contents of the repository
+      
+        Contents of the repository
+      
     </span>
   </a>
   
@@ -355,7 +425,9 @@
         <li class="md-nav__item">
   <a href="#contributing" class="md-nav__link">
     <span class="md-ellipsis">
-      Contributing
+      
+        Contributing
+      
     </span>
   </a>
   
@@ -364,7 +436,9 @@
         <li class="md-nav__item">
   <a href="#versioning" class="md-nav__link">
     <span class="md-ellipsis">
-      Versioning
+      
+        Versioning
+      
     </span>
   </a>
   
@@ -373,7 +447,9 @@
         <li class="md-nav__item">
   <a href="#authors" class="md-nav__link">
     <span class="md-ellipsis">
-      Authors
+      
+        Authors
+      
     </span>
   </a>
   
@@ -382,16 +458,20 @@
         <li class="md-nav__item">
   <a href="#license" class="md-nav__link">
     <span class="md-ellipsis">
-      License
+      
+        License
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#european-commission-website" class="md-nav__link">
+  <a href="#european-digital-identity" class="md-nav__link">
     <span class="md-ellipsis">
-      European Commission website
+      
+        European Digital Identity
+      
     </span>
   </a>
   
@@ -415,13 +495,16 @@
       <a href="architecture-and-reference-framework-main/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Architecture and reference framework
     
-      <br>
-      <small>Architecture and Reference Framework</small>
+  
+    Architecture and reference framework
+  
+
     
   </span>
+  
   
 
       </a>
@@ -439,10 +522,16 @@
       <a href="discussion-topics/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Discussion topics
+  
+
     
   </span>
+  
   
 
       </a>
@@ -460,10 +549,43 @@
       <a href="technical-specifications/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Technical specifications
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.eudi.dev/latest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Implementation
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -481,6 +603,15 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -492,25 +623,25 @@
 
 <h1 id="european-digital-identity-wallet">European Digital Identity Wallet</h1>
 <p><img alt="Digital Identity for all Europeans - A personal digital wallet for EU citizens and residents" src="media/top-banner-arf.png" /></p>
-<p>Under the <a href="https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation">Electronic Identification, Authentication and Trust Services (eIDAS)
-Regulation</a>,
-EU Member States may, on a voluntary basis, notify and recognise, national
-electronic identification schemes in their Member States. The recognition of
-notified electronic identification became mandatory in 2018. Yet, there is no
-requirement for Member States to develop a national electronic identification
-and to make it interoperable with those in other Member States. This has led to
-discrepancies between countries. The new <a href="https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18">European Digital Identity Regulation</a>
-addresses shortcomings in eIDAS by improving the effectiveness of the framework
-and extending its benefits to the private sector. Member States will offer
-citizens and businesses digital wallets that will be able to link various
-aspects of their national digital identities. These may be provided by public
-authorities or the private sector, if they are recognized by the Member States.</p>
+<p>The <a href="https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation">eIDAS Regulation</a>
+allows EU Member States to notify and recognise each other's national electronic
+ID systems. Since 2018, any scheme that has been notified must be recognised
+across the EU. But there's no obligation for every country to create its own
+electronic ID or to make it work with others. This has led to big differences
+from one Member State to another.  </p>
+<p>The new <a href="https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18">European Digital Identity Regulation</a>
+is designed to fix these gaps. It makes the rules more effective and also opens
+them up to the private sector. Every Member State will now offer people and
+businesses a <strong>European Digital Identity Wallet</strong>. These wallets will let users connect
+different parts of their national digital identity in one secure app. They can
+be provided directly by governments or by private companies, as long as they are
+officially recognised.  </p>
 <p>The EU Digital Identity Wallet will be:</p>
 <ul>
-<li><strong>made available to anyone who wants to use it</strong>:  Any EU citizen, resident,
-  and business in the EU who would like to make use of the EU Digital Identity
+<li><strong>made available to anyone who wants to use it</strong>: Any EU citizen, resident,
+  and business in the EU who would like to make use of the EU Digital Identity
   will be able to do so.</li>
-<li><strong>used widely</strong>: EU Digital Identity Wallets will be used as a way to
+<li><strong>used widely</strong>: EU Digital Identity Wallets will be used as a way to
   identify users when providing them with access to public and private digital
   services across the EU.</li>
 <li><strong>controlled by users</strong>: The EU Digital Identity Wallets will enable people
@@ -558,38 +689,72 @@ concepts and specifications for the European Digital Identity Framework. The
 current ARF version is based on the <a href="https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18">legal text adopted</a>
 by the co-legislators, including the adopted Commission Implementing Regulations:</p>
 <ul>
-<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2977">CIR 2024/2977</a>
+<li><a href="https://data.europa.eu/eli/reg_impl/2024/2977/oj">CIR 2024/2977</a>
 regarding PID and EAA,</li>
-<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402979">CIR 2024/2979</a>
+<li><a href="https://data.europa.eu/eli/reg_impl/2024/2979/oj">CIR 2024/2979</a>
 regarding integrity and core functionalities,</li>
-<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402980">CIR 2024/2980</a>
+<li><a href="https://data.europa.eu/eli/reg_impl/2024/2980/oj">CIR 2024/2980</a>
 regarding ecosystem notifications,</li>
-<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402981">CIR 2024/2981</a>
+<li><a href="https://data.europa.eu/eli/reg_impl/2024/2981/oj">CIR 2024/2981</a>
 regarding certification of Wallet Solutions,</li>
-<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202402982">CIR 2024/2982</a>
-regarding protocols and interfaces.</li>
+<li><a href="https://data.europa.eu/eli/reg_impl/2024/2982/oj">CIR 2024/2982</a>
+regarding protocols and interfaces,</li>
+<li><a href="https://data.europa.eu/eli/reg_impl/2025/846/oj">CIR 2025/846</a>
+regarding cross border identity matching,</li>
+<li><a href="https://data.europa.eu/eli/reg_impl/2025/847/oj">CIR 2025/847</a>
+regarding security breaches of European Digital Identity Wallets,</li>
+<li><a href="https://data.europa.eu/eli/reg_impl/2025/848/oj">CIR 2025/848</a>
+regarding registration of Wallet Relying Parties,</li>
+<li><a href="https://data.europa.eu/eli/reg_impl/2025/849/oj">CIR 2025/849</a>
+regarding the list of certified European Digital Identity Wallets,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1566/oj">CIR 2025/1566</a>
+regarding the verification the identity and attributes of a QC or QEAA holder,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1567/oj">CIR 2025/1567</a>
+regarding management of remote QSCDs as qualified trust services,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1568/oj">CIR 2025/1568</a>
+regarding peer reviews of eID schemes,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1569/oj">CIR 2025/1569</a>
+regarding QEAAs and EAAs provided by or on behalf of a public sector body
+responsible for an authentic source,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1570/oj">CIR 2025/1570</a>
+regarding notification of information on certified QSCDs,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1571/oj">CIR 2025/1571</a>
+regarding the formats and procedures for annual reports by supervisory bodies,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1572/oj">CIR 2025/1572</a>
+regarding the format and procedures for notification of intention and
+verification with regard to the initiation of qualified trust services,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1929/oj">CIR 2025/1929</a> regarding the binding of date and time to data and establishing the accuracy of the time sources for the provision of qualified electronic time stamps,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1942/oj">CIR 2025/1942</a> regarding qualified validation services for qualified electronic signatures and qualified validation services for qualified electronic seals,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1943/oj">CIR 2025/1943</a> regarding reference standards for qualified certificates for electronic signatures and qualified certificates for electronic seals,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1944/oj">CIR 2025/1944</a> regarding reference standards for processes for sending and receiving data in qualified electronic registered delivery services and as regarding interoperability of those services,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1945/oj">CIR 2025/1945</a> regarding the validation of qualified electronic signatures and of qualified electronic seals and the validation of advanced electronic signatures based on qualified certificates and of advanced electronic seals based on qualified certificates,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/1946/oj">CIR 2025/1946</a> regarding qualified preservation services for qualified electronic signatures and for qualified electronic seals,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/2160/oj">CIR 2025/2160</a> regarding reference standards, specifications and procedures for the management of risks to the provision of non-qualified trust services,</li>
+<li><a href="http://data.europa.eu/eli/reg_impl/2025/2162/oj">CIR 2025/2162</a> regarding the accreditation of conformity assessment bodies performing the assessment of qualified trust service providers and the qualified trust services they provide, the conformity assessment report and the conformity assessment scheme, </li>
+<li><a href="http://data.europa.eu/eli/dec_impl/2025/2164/oj">CID 2025/2164</a> regarding the version of the standard on which the common template for the trusted lists is based.</li>
 </ul>
 <h2 id="contents-of-the-repository">Contents of the repository</h2>
 <p>This repository contains:</p>
 <ul>
-<li>"<a href="./architecture-and-reference-framework-main">Architecture and Reference Framework</a>"
+<li>"<a href="architecture-and-reference-framework-main/">Architecture and Reference Framework</a>"
 the main narrative text that describes the European Digital Identity Wallet and
 its ecosystem.</li>
-<li>"<a href="./annexes">Annexes</a>" the list of annexes that provide additional
+<li>"<a href="annexes/">Annexes</a>" the list of annexes that provide additional
 information to the main narrative text. In particular, the annexes provide normative
 high-level requirements.</li>
-<li>"<a href="./technical-specifications">Technical Specifications</a>" the list
+<li>"<a href="technical-specifications/">Technical Specifications</a>" the list
 of specifications that will be developed to support the implementation of the
 European Digital Identity Wallet.</li>
-<li>"<a href="./discussion-topics">Discussion Topics</a>" the list of discussion
-topics that are open for public consultation. The topics are organized into
+<li>"<a href="discussion-topics/">Discussion Topics</a>" the list of discussion
+topics that are open for public consultation. The topics are organised into
 three iterations, each focusing on a specific set of subjects to be included in
 a major document release.</li>
 </ul>
 <p>The latest <strong>authoritative version</strong> is tagged as <a href="https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework/releases">release/tag in this repository</a>.</p>
 <h2 id="contributing">Contributing</h2>
-<p>Please read <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for details on our code of conduct,
-and the process for submitting pull requests to us.</p>
+<p>Please read <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+for details on our code of conduct, and the process for submitting pull requests
+to us.</p>
 <h2 id="versioning">Versioning</h2>
 <p>We use <a href="http://semver.org/">SemVer</a> for versioning. For the versions available,
 see the <a href="https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework/tags">tags on this repository</a>.</p>
@@ -597,9 +762,11 @@ see the <a href="https://github.com/eu-digital-identity-wallet/architecture-and-
 <p>See the list of <a href="https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework/graphs/contributors">contributors</a>
 who participated in this project.</p>
 <h2 id="license">License</h2>
-<p>See the <a href="../LICENSE">LICENSE</a> file for details.</p>
-<h2 id="european-commission-website"><a href="https://commission.europa.eu/index_en">European Commission website</a></h2>
+<p>See the <a href="https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/main/LICENCE">LICENCE</a>
+file for details.</p>
+<h2 id="european-digital-identity">European Digital Identity</h2>
 <ul>
+<li><a href="https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/694487738/EU+Digital+Identity+Wallet+Home">EUDI Wallet website</a></li>
 <li><a href="https://commission.europa.eu/about-european-commission/contact_en">Contact the European Commission</a></li>
 <li><a href="https://european-union.europa.eu/contact-eu/social-media-channels_en#/search?page=0&amp;institutions=european_commission">Follow the European Commission on social media</a></li>
 <li><a href="https://commission.europa.eu/resources-partners_en">Resources for partners</a></li>
@@ -623,6 +790,12 @@ who participated in this project.</p>
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -650,10 +823,13 @@ who participated in this project.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "toc.integrate"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "toc.integrate", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
